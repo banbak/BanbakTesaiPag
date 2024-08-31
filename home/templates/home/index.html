@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página Personal</title>
+    <title>Esteban Baksai</title>
     {% load static %}
     <link rel="stylesheet" href="{% static 'home/styles.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
         <div class="container">
             <img src="{% static 'home/banbak.jpg' %}" alt="Foto de Mi" class="profile-img">
-            <h1>Tu Nombre</h1>
+            <h1>Esteban Baksai</h1>
             <p>Administrador de Bases de Datos | Desarrollador Python | Especialista en SQL, Azure, Power BI</p>
         </div>
     </header>
@@ -22,18 +23,30 @@
             <p>Soy un profesional dedicado a la administración de bases de datos, con experiencia en SQL Server, Azure, y herramientas de análisis de datos como Power BI y Excel. Tengo habilidades en desarrollo con Python, y me apasiona seguir aprendiendo y perfeccionando mis conocimientos en tecnología.</p>
         </section>
         
-        <section class="contact">
+        <div class="contact">
             <h2>Contacto</h2>
             <ul>
-                <li>Email: <a href="mailto:tuemail@example.com">tuemail@example.com</a></li>
-                <li>LinkedIn: <a href="https://www.linkedin.com/in/tuperfil" target="_blank">linkedin.com/in/tuperfil</a></li>
-                <li>GitHub: <a href="https://github.com/tuusuario" target="_blank">github.com/tuusuario</a></li>
+                <li>
+                    <a href="mailto:esteban.baksai.fi@gmail.com" target="_blank">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/esbak/" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/banbak" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
             </ul>
-        </section>
+        </div>        
     </main>
 
     <footer>
-        <p>&copy; 2024 Tu Nombre. Todos los derechos reservados.</p>
+        <p>&copy; 2024 Esteban Baksai. Todos los derechos reservados.</p>
     </footer>
 </body>
 </html>

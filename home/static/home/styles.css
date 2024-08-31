@@ -1,81 +1,139 @@
+/* Fondo general */
 body {
-    font-family: Arial, sans-serif;
+    background-color: #1c1c1e;  /* Color oscuro para el fondo */
+    color: #e1e1e6;  /* Texto claro para contraste */
+    font-family: 'Roboto', sans-serif;  /* Fuente moderna */
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
 }
 
-header {
-    background-color: #4CAF50;
-    color: white;
-    padding: 20px 0;
+/* Contenedor principal */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
     text-align: center;
 }
 
-.container {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
+/* Imagen de perfil */
 .profile-img {
+    border-radius: 50%;
     width: 150px;
     height: 150px;
-    border-radius: 50%;
-    margin-bottom: 15px;
+    object-fit: cover;
+    border: 2px solid #4b0082;  /* Borde índigo */
+    box-shadow: 0 0 15px rgba(75, 0, 130, 0.7);  /* Sombra con tinte índigo */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-h1 {
-    font-size: 2.5em;
-    margin: 0;
+.profile-img:hover {
+    transform: scale(1.1);  /* Efecto de zoom al pasar el ratón */
+    box-shadow: 0 0 25px rgba(75, 0, 130, 1);
 }
 
-p {
-    font-size: 1.2em;
-    margin: 10px 0 0;
+/* Estilo de encabezado */
+header {
+    padding: 40px 0;
+    background: linear-gradient(135deg, #4b0082, #000);
+    color: #ffffff;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
 }
 
-main {
-    padding: 20px 0;
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
 }
 
-.about, .contact {
-    max-width: 960px;
-    margin: 20px auto;
-    background-color: white;
+header p {
+    font-size: 1.2rem;
+    color: #a9a9b2;  /* Gris claro */
+}
+
+/* Sección de "Sobre mí" */
+.about {
+    margin: 40px auto;  /* Márgenes verticales */
+    max-width: 800px;  /* Ancho máximo de la sección */
     padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.about h2, .contact h2 {
-    margin-top: 0;
-    color: #4CAF50;
+.about h2 {
+    color: #4b0082;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.about p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Sección de contacto */
+.contact {
+    margin: 40px auto;  /* Márgenes verticales */
+    max-width: 800px;  /* Ancho máximo de la sección */
+    padding: 20px;
+}
+
+.contact h2 {
+    color: #4b0082;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    text-align: center;
 }
 
 .contact ul {
     list-style-type: none;
     padding: 0;
+    display: flex;  /* Alineación horizontal */
+    justify-content: center;  /* Centrar los íconos */
+    gap: 20px;  /* Espacio entre los íconos */
 }
 
-.contact ul li {
-    margin-bottom: 10px;
+.contact li {
+    margin: 10px 0;
 }
 
-.contact ul li a {
-    color: #4CAF50;
+.contact a {
+    color: #ffffff;
     text-decoration: none;
+    font-size: 2rem;  /* Tamaño de los íconos */
+    border-bottom: none;  /* Quitar el borde inferior */
+    transition: color 0.3s ease;
 }
 
-.contact ul li a:hover {
-    text-decoration: underline;
+.contact a:hover {
+    color: #4b0082;  /* Cambiar el color al pasar el ratón */
 }
 
+/* Pie de página */
 footer {
-    background-color: #333;
-    color: white;
+    padding: 20px 0;
+    background-color: #101010;
+    color: #a9a9b2;
     text-align: center;
-    padding: 10px 0;
-    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Efectos generales */
+h1, h2 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+a {
+    color: #4b0082;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #e1e1e6;
 }
