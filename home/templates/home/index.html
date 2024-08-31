@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Personal</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'home/styles.css' %}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="{% static 'home/banbak.jpg' %}" alt="Foto de Mi" class="profile-img">
+            <h1>Tu Nombre</h1>
+            <p>Administrador de Bases de Datos | Desarrollador Python | Especialista en SQL, Azure, Power BI</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="about">
+            <h2>Sobre Mí</h2>
+            <p>Soy un profesional dedicado a la administración de bases de datos, con experiencia en SQL Server, Azure, y herramientas de análisis de datos como Power BI y Excel. Tengo habilidades en desarrollo con Python, y me apasiona seguir aprendiendo y perfeccionando mis conocimientos en tecnología.</p>
+        </section>
+        
+        <section class="contact">
+            <h2>Contacto</h2>
+            <ul>
+                <li>Email: <a href="mailto:tuemail@example.com">tuemail@example.com</a></li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/tuperfil" target="_blank">linkedin.com/in/tuperfil</a></li>
+                <li>GitHub: <a href="https://github.com/tuusuario" target="_blank">github.com/tuusuario</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Tu Nombre. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
